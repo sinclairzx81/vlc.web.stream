@@ -24,23 +24,26 @@ in your browser to ensure the application is running.
 By default, the http server is expecting to recieve a mediastream on localhost:5002. The following is the 
 steps taken to configure this stream in VLC 2.1.0 Rincewind
 
-* Open VLC
-* Select Media -> Stream (from top toolbar)
-* In Open Media Dialog
-** File Tab - click Add
-** Select Video
-** File Tab - Click Stream (bottom right)
-* In Stream Output Dialog
-** Click Next
-** Select "HTTP" from new destination dropdown.
-** Click Add
-** In HTTP Tab
-*** Port - 5002
-*** Path - /
-** Click Next
-* In Transcoding Options Dialog
-** Profile - Video - Theora + Vorbis (OGG)
-** Click Next
+	Open VLC
+	Select Media -> Stream (from top toolbar)
+	-----------------------
+	In Open Media Dialog
+	File Tab - click Add
+	Select Video
+	File Tab - Click Stream (bottom right)
+	-----------------------
+	In Stream Output Dialog
+	Click Next
+	Select "HTTP" from new destination dropdown.
+	Click Add
+		In HTTP Tab
+			Port - 5002
+			Path - /
+	Click Next
+	-----------------------
+	In Transcoding Options Dialog
+	Profile - Video - Theora + Vorbis (OGG)
+	Click Next
 
 In next dialog, click "Stream" to stream the video. Note the Generated stream output string that can be used
 to configure this stream from the command line.
